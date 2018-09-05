@@ -11,11 +11,10 @@ import android.util.Log;
 import java.util.concurrent.CountDownLatch;
 
 public class BinderPool {
-    private static final String TAG  = BinderPool.class.getName();
     public static final int BINDER_CODEZ_COUNT = 1;
     public static final int BINDER_CODEZ_MAX = 2;
 
-
+    private static final String TAG  = BinderPool.class.getName();
     private static volatile BinderPool mInstances ;
     private Context context;
     private IBinderPool mIBinderPool;
